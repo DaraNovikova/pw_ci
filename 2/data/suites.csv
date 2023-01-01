@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Jan 01 22:14:30 GMT 2023","Sun Jan 01 22:14:40 GMT 2023","9885","chromium","","GitHub - Search Result","","","third try",""
+"failed","Sun Jan 01 22:14:43 GMT 2023","Sun Jan 01 22:14:48 GMT 2023","4629","chromium","","GitHub - Search Result","","","should verify ""We couldn’t find any repositories"" message, after entering invalid keyword",""
+"passed","Sun Jan 01 22:14:30 GMT 2023","Sun Jan 01 22:14:40 GMT 2023","9166","chromium","","GitHub - Search Result","","","should verify search result with valid repository name",""
+"passed","Sun Jan 01 22:14:30 GMT 2023","Sun Jan 01 22:14:41 GMT 2023","10432","chromium","","GitHub - Search Result","","","second try",""
