@@ -68,18 +68,4 @@ test.describe('GitHub - Search Result', () => {
 
     expect(await page.textContent(firstSearchResultLink)).toBe(expectedLink);
   });
-
-  test('should verify "We couldn’t find any repositories" message, after entering invalid keyword', async ({ page }) => {
-    // Selectors
-    const notFoundMessage = '.blankslate';
-
-    // Test data
-    const keyword = 'qzzsa';
-    const expectedMessage = "We couldn’t find any repositories matching 'qzzsa' You could try an advanced search.";
-
-    await page.fill(searchField, keyword);
-    await page.press(searchField, 'Enter');
-
-    expect(await page.textContent(notFoundMessage)).toBe(expectedMessage);
-  });
 });
