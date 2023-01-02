@@ -68,4 +68,18 @@ test.describe('GitHub - Search Result', () => {
 
     expect(await page.textContent(firstSearchResultLink)).toBe(expectedLink);
   });
+
+  test('fourth try', async ({ page }) => {
+    // Selectors
+    const firstSearchResultLink = '.repo-list li a';
+
+    // Test data
+    const keyword = 'playwright';
+    const expectedLink = 'microsoft/playwright';
+
+    await page.fill(searchField, keyword);
+    await page.press(searchField, 'Enter');
+
+    expect(await page.textContent(firstSearchResultLink)).toBe(expectedLink);
+  });
 });
